@@ -99,6 +99,12 @@ windows
 py -m pip install -r requirements.txt
 ```
 
+Zainstaluj pakiet, który ułatwi obsługę uploadu mediów:
+
+```python
+pip install Pillow
+```
+
 ### Skonfiguruj ustawienia połączenia z bazą danych:
 
 Edytuj `settings.py` i zmień ustawienia dla bazy danych, a następnie przeprowadź migracje bazy danych:
@@ -123,6 +129,24 @@ python manage.py runserver
 ```bash
 cd myapp
 ```
-### Zainstaluj potrzebne zależności:
+Zainstaluj potrzebne zależności:
 
+``` javascript
+npm install
+```
 
+``` javascript
+npm install react-router-dom@5.2
+```
+
+``` javascript
+npm install axios
+```
+
+Uruchom aplikację React.js:
+
+``` javascript
+npm start
+```
+
+Aplikacja powinna automatycznie otworzyć się w przeglądarce pod adresem http://localhost:3000.
