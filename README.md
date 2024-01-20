@@ -45,4 +45,84 @@
 
 ## Instalacja
 
-Sklonuj projekt za pomocą polecenia:
+### Sklonuj projekt
+
+```git
+git clone https://github.com/SebastianDev10/Clothes.git
+```
+
+### Po sklonowaniu repozytorium, przejdź do folderu backendowego:
+
+```bash
+cd myproject
+```
+
+### Zainstaluj zależności i aktywuj środowisko wirtualne
+
+unix / mac
+
+``` python
+python3 -m pip install --user virtualenv
+```
+
+windows
+
+```python
+py -m pip install --user virtualenv
+```
+
+utwórz środowisko wirtualne
+
+unix / mac
+
+```python
+python3 -m venv env
+```
+
+windows
+
+```pyhton
+py -m venv env
+```
+
+Zainstaluj potrzebne zależności:
+
+unix / mac
+
+``` python
+python3 -m pip install -r requirements.txt
+```
+
+windows
+
+```python
+py -m pip install -r requirements.txt
+```
+
+### Skonfiguruj ustawienia połączenia z bazą danych:
+
+Edytuj `settings.py` i zmień ustawienia dla bazy danych, a następnie przeprowadź migracje bazy danych:
+
+
+``` python
+python manage.py makemigrations
+```
+
+``` python
+python manage.py migrate
+```
+
+### Uruchom serwer Django:
+
+``` python
+python manage.py runserver
+```
+
+### Po uruchomieniu części backendowej, przejdz do folderu z częścią frontendową:
+
+```bash
+cd myapp
+```
+### Zainstaluj potrzebne zależności:
+
+
