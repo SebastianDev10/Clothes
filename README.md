@@ -150,3 +150,39 @@ npm start
 ```
 
 Aplikacja powinna automatycznie otworzyć się w przeglądarce pod adresem http://localhost:3000.
+
+##Wybór frameworków
+
+###Frontend: React.js
+
+- **Integracja z JWT i AJAX:** React dało się łatwo integrować się z technologią taką jak JWT dla autentykacji użytkownika i AJAX (wykorzystując bibliotekę axios) do komunikacji z backendem, co było kluczowe dla funkcjonalności takich jak rejestracja, logowanie i dynamiczne ładowanie zawartości
+- **Popularność i Zasoby:** React jest bardzo popularnym narzędziem, cechuje go duża dostępność zasobów oraz duża społeczność, dlatego łatwiej było dotrzeć do materiałów edukacyjnych, bibliotek, komponentów, ikon, co przyspieszyło rozwój aplikacji
+- **Wsparcie dla SPA:** React ma wsparcie dla Single Page Applications (SPA), czyli moja aplikacja ładuje się dosyć szybko, a interakcja z użytkownikiem jest płynna, np. nie trzeba przeładowywać strony podczas gdy użytkownik używa paska wyszukiwania, tak samo dane dodawane przez formularz nie wymagają odświeżenia strony, aby zostały zapisane i uwidocznione
+
+###Backend: Django
+
+- **Rozbudowane Funkcjonalności:** Django jest bardzo rozbudowanym frameworkiem backendowym, gdyż posiada wiele wbudowanych funkcjonalności takich jak np. gotowy model użytkownika, ORM, co przyspiesza rozwój pisania kodu
+- **Bezpieczeństwo:** Ochrona przed atakami, takimi jak SQL injection.
+- **Skalowalność i Wydajność:** Cechuje się skalowalnością oraz wydajnością, co jest ważne dla aplikacji, która posiada bazę użytkowników, zapisanych obrazów 
+- **Wsparcie dla REST API i Integracja z Reactem:** Wspiera REST API i integruje się z Reactem. Jest potężnym narzędziem do tworzenia API, które można w łatwy sposób połączyć z frontendem. Pozwala to na płynną komunikację między frontendem a backendem.
+- **Obsługa i Zarządzanie Multimediami:** Jest to istotne dla mojej aplikacji, która musi umożliwiać użytkownikom dodawanie zdjęć ubrań oraz zdjęcia profilowego (awataru)
+
+##Uzasadnienie Doboru Architektury
+
+###Backend: Architektura oparta na RESTful API
+
+- Ta architektura służy jako serwerowy punkty końcowy dla zapytań HTTP
+- Umożliwia łatwą komunikację między frontendem a backendem przy użyciu metod http (GET, POST)
+- Ułatwiona jest implementacja autentykacji i autoryzacji, co zwiększa bezpieczeństwo ochrony danych i zapewnia, że uprawnieni użytkownicy mają dostęp do określonych zasobów
+- Wyraźnie oddzielona jest logika biznesowa od interfejsu użytkownika
+- Modularna struktura, która zapewnia czystość kodu, ułatwia rozwój aplikacji – podział na pliki widoku (views.py,  gdzie znajduje się logika biznesowa i obsługa żądań http, integracja z serializerami i modelami, tworzenie spójnego i wydajnego interfejsu API), definicja struktury danych (models.py, gdzie zdefiniowane są modele struktury bazy danych. Modele wykorzystują ORM, który umożliwia interakcje z bazą danych w obiektowy sposób) oraz pliki konwersji danych (serializers.py, gdzie są zawarte definicje serializerów, które są odpowiedzialne za przekształcanie danych między formatem JSON, używanym w komunikacji API, a formatem dla modeli Django)
+
+###Frontend: Architektura oparta na Single Page Application (SPA) 
+
+- Interaktywny i Dynamiczny Interfejs Użytkownika – SPA umożliwia tworzenie płynnego i dynamicznego interfejsu użytkownika, bez konieczności przeładowania całej strony (np. wykorzystanie hooków stanu takoich jak useState, useEffect, użycie nawigacji, która umożliwia przełączanie między różnymi widokami bez odświeżania strony)
+- Komunikacja z backendem – większość danych jest pobierana i wysyłana do serwera w tle
+- Zarządzenia autentykacją – decydowanie o dostępie do poszczególnych ścieżek na podstawie tokena przechowywanego w localStorage
+
+Podsumowując, połączenie obu tych architektur, umożliwiło wyraźne oddzielenie logiki biznesowej, przetwarzania danych i interakcji z bazą danych (backend) od prezentacji tych danych i interakcji z użytkownikiem (frontend).
+
+
