@@ -185,4 +185,12 @@ Aplikacja powinna automatycznie otworzyć się w przeglądarce pod adresem http:
 
 Podsumowując, połączenie obu tych architektur, umożliwiło wyraźne oddzielenie logiki biznesowej, przetwarzania danych i interakcji z bazą danych (backend) od prezentacji tych danych i interakcji z użytkownikiem (frontend).
 
+## Prezentacja aplikacji
+
+### Widok mobilny
+
+Strona główna (home)
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/6a0d7b9d-b80b-462f-9b39-c5b6a98919ce)
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/29c0fa66-1f9c-4f38-b4e6-de7e3a2e0180)
+
 
