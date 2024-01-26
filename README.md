@@ -1,4 +1,4 @@
-# Clothes
+# Aplikacja internetowa służąca prezentowaniu modnych ubrań.
 
 
 # Przegląd ogólny aplikacji
