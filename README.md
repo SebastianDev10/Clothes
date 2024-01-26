@@ -190,7 +190,50 @@ Podsumowując, połączenie obu tych architektur, umożliwiło wyraźne oddziele
 ### Widok mobilny
 
 Strona główna (home)
+
 ![image](https://github.com/SebastianDev10/Clothes/assets/128023588/6a0d7b9d-b80b-462f-9b39-c5b6a98919ce)
+
 ![image](https://github.com/SebastianDev10/Clothes/assets/128023588/29c0fa66-1f9c-4f38-b4e6-de7e3a2e0180)
+
+Strona rejestracji użytkownika (register)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/b3689860-22cb-49f5-961d-2fc6210a9f14)
+
+Strona logowania użytkownika (login)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/623feed9-8796-4c24-bea6-917d7b671fb9)
+
+Strona profilu użytkownika (UserProfile)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/8237bd07-e242-4058-a65e-2a99ca378b14)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/406a7a85-e827-4862-ba47-5c2d56e15007)
+
+
+
+
+### Widok normalny
+
+Strona rejestracji użytkownika (register)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/1c2328c6-f5a6-4b01-bedc-513112773e4a)
+
+Strona logowania użytkownika (login)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/cc65772c-ccfe-4d4e-bba3-b35316475e16)
+
+Strona główna (home)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/155629a6-90ef-419e-a819-fdf59384c68c)
+
+Strona profilu użytkownika (UserProfile)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/3762299b-f48f-4b2e-9e43-53076f0abf63)
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/22557fc9-cf83-4115-af5b-df1b4428e626)
+
+## Dokumentacja Swagger
+
+
 
 
