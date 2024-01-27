@@ -244,6 +244,17 @@ Strona profilu użytkownika (UserProfile)
 
 ![image](https://github.com/SebastianDev10/Clothes/assets/128023588/53c8897c-c541-43f1-b4ae-620dd23a963f)
 
+## Tworzenie kopii zapasowej bazy danych w Pg Admin4
+
+Należy kliknąć prawym przyciskiem na nazwę bazy danych i w rozwiniętym menu wybrać opcję "Backup.."
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/2450205f-73ef-4273-9314-010fda2d0acf)
+
+Następnie trzeba wybrać ścieżkę zapisu pliku oraz jego nazwę oraz zapisać
+
+![image](https://github.com/SebastianDev10/Clothes/assets/128023588/c1b6af59-1228-47f7-b1e6-3d96343b32ff)
+
+
 
 
 
